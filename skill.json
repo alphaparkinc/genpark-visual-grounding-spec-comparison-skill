@@ -1,0 +1,38 @@
+{
+  "name": "genpark-visual-grounding-spec-comparison-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multimodal visual specification grounding engine calculating physical dimensions, DoF metrics, and hardware trade-offs.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "multimodal-vision",
+  "tags": [
+    "visual-grounding",
+    "hardware-specs",
+    "robotics-comparison",
+    "spec-matrix",
+    "multimodal-ai"
+  ],
+  "inputs": {
+    "product_a": {
+      "type": "string",
+      "default": "Unitree G1 Humanoid"
+    },
+    "product_b": {
+      "type": "string",
+      "default": "Figure 02 Humanoid"
+    }
+  },
+  "outputs": {
+    "comparison_id": {
+      "type": "string"
+    },
+    "spec_delta_matrix": {
+      "type": "array"
+    },
+    "visual_recommendation": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
